@@ -1,4 +1,73 @@
+/* shared styles  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 .font {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
 }
+
+.margin {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+/* shared styles ends  */
+
+/* Navbar related style starts here  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-left h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3a3a3a;
+}
+
+.nav-right ul {
+  display: flex;
+  gap: 30px;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  font-weight: 600;
+  color: #3a3a3a;
+}
+/* Navbar related style ends here  */
+
+/* Responsive styles starts here  */
+
+/* Mobile devices  */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-right ul {
+    margin-top: 20px;
+    gap: 20px;
+  }
+}
+
+/* Tablet Devices  */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+.navbar{
+  margin: 20px ;
+}
+
+}
+/* Responsive styles ends here  */
