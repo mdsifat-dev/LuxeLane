@@ -87,6 +87,25 @@ a {
 }
 /* Banner styles ends here  */
 
+/* Sponsor img style starts here  */
+.sponsor-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-around;
+  justify-items: center;
+  padding: 30px;
+  margin: 50px auto;
+  align-items: center;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-image: linear-gradient(to right, transparent, #dcdcdc, transparent) 1;
+}
+
+.sponsor-img {
+  cursor: pointer;
+}
+/* Sponsor img style ends here  */
+
 /* Responsive styles starts here  */
 /* Mobile devices  */
 @media screen and (max-width: 576px) {
@@ -116,6 +135,19 @@ a {
   .banner-left h1 {
     font-size: 1.75rem;
   }
+
+  .sponsor-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 5px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sponsor-img {
+    max-width: 60px;
+  }
 }
 
 /* Tablet Devices  */
@@ -135,6 +167,10 @@ a {
 
   .banner-left h1 {
     font-size: 2.25rem;
+  }
+
+  .sponsor-img {
+    max-width: 70px;
   }
 }
 /* Responsive styles ends here  */
