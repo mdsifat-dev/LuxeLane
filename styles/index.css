@@ -198,6 +198,32 @@ a {
 }
 /* Product style ends here  */
 
+/* Feature section styles starts here  */
+.feature-section {
+  display: flex;
+  gap: 100px;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.feature-info {
+  max-width: 960px;
+}
+
+.feature-info h2 {
+  font-size: 2.375rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.join-btn {
+  border-radius: 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 14px;
+}
+/* Feature section styles ends here  */
+
 /* Responsive styles starts here  */
 /* Mobile devices  */
 @media screen and (max-width: 576px) {
@@ -239,6 +265,17 @@ a {
 
   .sponsor-img {
     max-width: 60px;
+  }
+
+  .feature-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .feature-info h2 {
+    font-size: 1.8rem;
   }
 }
 
